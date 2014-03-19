@@ -19,5 +19,5 @@ I have decided to publish some of these workings here from time to time.
 
 [![After](https://github.com/cmichi/reworking-typography/raw/master/hibernation/after.png)](https://github.com/cmichi/reworking-typography/raw/master/hibernation/hibernation.pdf)
 
-(click to open the PDF)
+(click on image to open the PDF)
 
