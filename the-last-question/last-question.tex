@@ -2,7 +2,10 @@
 %!TEX encoding = UTF-8 Unicode
 
 %\documentclass[11pt,twocolumn]{article}
-\documentclass[11pt]{article}
+\documentclass[11pt,twocolumn,paper=a5,pagesize]{article}
+%\documentclass[11pt,twocolumn,paper=a5,pagesize]{article}
+\usepackage{multicol}
+%\documentclass[11pt]{article}
 \usepackage{xunicode}
 \usepackage{xltxtra}
 \defaultfontfeatures{Mapping=tex-text}
@@ -16,14 +19,66 @@
 \setmainfont[Ligatures = {Common, Rare}]{PF Din Text Cond Pro}
 \parindent0mm
 
-\usepackage[babel,english=british]{csquotes}
-\newcommand{\q}[1]{\enquote{#1}}
+\usepackage[babel,german=guillemets]{csquotes}
+%\usepackage[babel,german=guillemets]{csquotes}
+%\newcommand{\q}[1]{\enquote{#1}}
+\newcommand{\q}[1]{»#1«}
 
 \newcommand{\pc}[1]{ {\fontspec{OCRA}\scriptsize \addfontfeature{LetterSpace=-12.0,WordSpace=.7}{#1}} }
+\newcommand{\futureone}[1]{ #1 }
+\newcommand{\futuretwo}[1]{ #1 }
+\newcommand{\futurethree}[1]{ #1 }
+\newcommand{\futurefour}[1]{ #1 }
+\newcommand{\futurefive}[1]{ #1 }
 
-\newcommand{\sep}[0]{\vspace{.5cm}\hrule\vspace{.5cm}}
+%\newcommand{\futuretwo}[1]{ {\fontspec{Final Frontier} #1 }}
+%\newcommand{\futurefive}[1]{ {\fontspec{P22 Arts And Crafts} #1 }}
+
+\newcommand{\sepa}[0]{\vspace{.6cm} {\centering 
+
+\includegraphics[scale=1.00]{o1.pdf}
+
+}\vspace{.6cm}}
+
+\newcommand{\sepb}[0]{\vspace{.6cm} {\centering 
+
+\includegraphics[scale=1.00]{o7.pdf}
+
+}\vspace{.6cm}}
+
+\newcommand{\sepc}[0]{\vspace{.6cm} {\centering 
+
+\includegraphics[scale=1.00]{o3.pdf}
+
+}\vspace{.6cm}}
+
+\newcommand{\sepd}[0]{\vspace{.6cm} {\centering 
+
+\includegraphics[scale=1.00]{o4.pdf}
+
+}\vspace{.6cm}}
+
+\newcommand{\sepe}[0]{\vspace{.6cm} {\centering 
+
+\includegraphics[scale=1.00]{o5.pdf}
+
+}\vspace{.6cm}}
+
+\newcommand{\sepf}[0]{\vspace{.6cm} {\centering 
+
+\includegraphics[scale=1.00]{o6.pdf}
+
+}\vspace{.6cm}}
+
+\newcommand{\sepg}[0]{\vspace{.6cm} {\centering 
+
+\includegraphics[scale=1.00]{o2.pdf}
+
+}\vspace{.6cm}}
 
 \newcommand{\initial}[1]{ \lettrine[lines=3,lhang=0.3,nindent=0em]{  {\textsf{#1}}}{}}
+\newcommand{\initialb}[1]{ \lettrine[lines=3,lhang=0.3,nindent=1em]{  {\textsf{#1}}}{}}
+\newcommand{\initialt}[1]{ \lettrine[lines=3,lhang=0.3]{  {\textsf{#1}}}{}}
 
 
 \begin{document}
@@ -36,7 +91,9 @@
 }
 \ \\
 
-%\pagebreak
+
+
+\pagebreak
 
 
 \initial{T}he last question was asked for the first time, half in jest, on May 21, 
@@ -49,8 +106,6 @@ cold, clicking, flashing face---miles and miles of face---of that giant
 computer. They had at least a vague notion of the general plan of relays 
 and circuits that had long since grown past the point where any single 
 human could possibly have a firm grasp of the whole.
-\pc{INSUFFICIENT DATA FOR MEANINGFUL ANSWER.}
-%\pc{INSUFFICIENT\hspace{.08cm}DATA\ FOR\ MEANINGFUL ANSWER.}
 
 Multivac was self-adjusting and self-correcting. It had to be, for nothing 
 human could adjust and correct it quickly enough or even adequately 
@@ -59,7 +114,6 @@ superficially, yet as well as any men could. They fed it data, adjusted
 questions to its needs and translated the answers that were issued. 
 Certainly they, and all others like them, were fully entitled to share 
 in the glory that was Multivac's.
-\textsc{insufficient data for meaningful answer.}
 
 For decades, Multivac had helped design the ships and plot the trajectories
 that enabled man to reach the Moon, Mars, and Venus, but past that, 
@@ -148,15 +202,18 @@ Or maybe it could be put more simply like this: How can the net amount of entrop
 Multivac fell dead and silent. The slow flashing of lights ceased, the distant sounds of clicking relays ended.
 
 Then, just as the frightened technicians felt they could hold their breath no longer, there was a sudden springing to life of the teletype attached to that portion of Multivac. Five words were printed: 
-\textsc{INSUFFICIENT DATA FOR MEANINGFUL ANSWER.}
+\pc{INSUFFICIENT DATA FOR MEANINGFUL ANSWER.}
 
 "No bet," whispered Lupov. They left hurriedly.
 
 By next morning, the two, plagued with throbbing head and cottony mouth, had forgotten about the incident.
 
-\sep{}
+\sepa{}
 
-Jerrodd, Jerrodine, and Jerrodette I and II watched the starry picture in the visiplate change as the passage through hyperspace was completed in its non-time lapse. At once, the even powdering of stars gave way to the predominance of a single bright marble-disk, centered.
+\futureone{
+%\initialb{\includegraphics[scale=0.82]{neu4.pdf}}
+\initial{J}
+errodd, Jerrodine, and Jerrodette I and II watched the starry picture in the visiplate change as the passage through hyperspace was completed in its non-time lapse. At once, the even powdering of stars gave way to the predominance of a single bright marble-disk, centered.
 "That's X-23," said Jerrodd confidently. His thin hands clamped tightly behind his back and the knuckles whitened.
 
 The little Jerrodettes, both girls, had experienced the hyperspace passage for the first time in their lives and were self-conscious over the momentary sensation of inside-outness. They buried their giggles and chased one another wildly about their mother, screaming, "We've reached X-23 -- we've reached X-23 -- we've ----"
@@ -217,12 +274,14 @@ Jerrodd cupped the strip of thin cellufilm and said cheerfully, "See now, the Mi
 
 Jerrodine said, "and now children, it's time for bed. We'll be in our new home soon."
 
-Jerrodd read the words on the cellufilm again before destroying it: INSUFFICIENT DATA FOR A MEANINGFUL ANSWER.
+Jerrodd read the words on the cellufilm again before destroying it: \pc{INSUFFICIENT DATA FOR A MEANINGFUL ANSWER.}
 
 He shrugged and looked at the visiplate. X-23 was just ahead.
+}
 
-\sep{}
+\sepb{}
 
+\futuretwo{
 VJ-23X of Lameth stared into the black depths of the three-dimensional, small-scale map of the Galaxy and said, "Are we ridiculous, I wonder, in being so concerned about the matter?"
 MQ-17J of Nicron shook his head. "I think not. You know the Galaxy will be filled in five years at the present rate of expansion."
 
@@ -280,14 +339,16 @@ VJ-23X looked startled and said at once, "Oh, say, I didn't really mean to have 
 
 "Do you have trees on your world?" asked MQ-17J.
 
-The sound of the Galactic AC startled them into silence. Its voice came thin and beautiful out of the small AC-contact on the desk. It said: THERE IS INSUFFICIENT DATA FOR A MEANINGFUL ANSWER.
+The sound of the Galactic AC startled them into silence. Its voice came thin and beautiful out of the small AC-contact on the desk. It said: \pc{THERE IS INSUFFICIENT DATA FOR A MEANINGFUL ANSWER.}
 
 VJ-23X said, "See!"
 
 The two men thereupon returned to the question of the report they were to make to the Galactic Council.
+}
 
-\sep{}
+\sepc{}
 
+\futurethree{
 Zee Prime's mind spanned the new Galaxy with a faint interest in the countless twists of stars that powdered it. He had never seen this one before. Would he ever see them all? So many of them, each with its load of humanity - but a load that was almost a dead weight. More and more, the real essence of men was to be found out here, in space.
 Minds, not bodies! The immortal bodies remained back on the planets, in suspension over the eons. Sometimes they roused for material activity but that was growing rarer. Few new individuals were coming into existence to join the incredibly mighty throng, but what matter? There was little room in the Universe for new individuals.
 
@@ -333,7 +394,7 @@ But it was the same after all, the same as any other, and Zee Prime stifled his 
 
 Dee Sub Wun, whose mind had accompanied the other, said suddenly, "And Is one of these stars the original star of Man?"
 
-The Universal AC said, "MAN'S ORIGINAL STAR HAS GONE NOVA. IT IS NOW A WHITE DWARF."
+The Universal AC said, \q{\textsc{man's original star has gone nova. it is now a white dwarf.}}
 
 "Did the men upon it die?" asked Zee Prime, startled and without thinking.
 
@@ -355,14 +416,16 @@ Dee Sub Wun said, "What is wrong?"
 
 Dee sub Wun said in amusement, "You're asking how entropy might be reversed in direction."
 
-And the Universal AC answered. "THERE IS AS YET INSUFFICIENT DATA FOR A MEANINGFUL ANSWER."
+And the Universal AC answered. "\pc{THERE IS AS YET INSUFFICIENT DATA FOR A MEANINGFUL ANSWER.}"
 
 Zee Prime's thoughts fled back to his own Galaxy. He gave no further thought to Dee Sub Wun, whose body might be waiting on a galaxy a trillion light-years away, or on the star next to Zee Prime's own. It didn't matter.
 
 Unhappily, Zee Prime began collecting interstellar hydrogen out of which to build a small star of his own. If the stars must someday die, at least some could yet be built.
+}
 
-\sep{}
+\sepd{}
 
+\futurefour{
 Man considered with himself, for in a way, Man, mentally, was one. He consisted of a trillion, trillion, trillion ageless bodies, each in its place, each resting quiet and incorruptible, each cared for by perfect automatons, equally incorruptible, while the minds of all the bodies freely melted one into the other, indistinguishable.
 Man said, "The Universe is dying."
 
@@ -380,28 +443,30 @@ The Cosmic AC surrounded them but not in space. Not a fragment of it was in spac
 
 "Cosmic AC," said Man, "How may entropy be reversed?"
 
-The Cosmic AC said, "THERE IS AS YET INSUFFICIENT DATA FOR A MEANINGFUL ANSWER."
+The Cosmic AC said, "\pc{THERE IS AS YET INSUFFICIENT DATA FOR A MEANINGFUL ANSWER.}"
 
 Man said, "Collect additional data."
 
-The Cosmic AC said, "I WILL DO SO. I HAVE BEEN DOING SO FOR A HUNDRED BILLION YEARS. MY PREDECESSORS AND I HAVE BEEN ASKED THIS QUESTION MANY TIMES. ALL THE DATA I HAVE REMAINS INSUFFICIENT."
+The Cosmic AC said, "\pc{I WILL DO SO. I HAVE BEEN DOING SO FOR A HUNDRED BILLION YEARS. MY PREDECESSORS AND I HAVE BEEN ASKED THIS QUESTION MANY TIMES. ALL THE DATA I HAVE REMAINS INSUFFICIENT.}"
 
 "Will there come a time," said Man, "when data will be sufficient or is the problem insoluble in all conceivable circumstances?"
 
-The Cosmic AC said, "NO PROBLEM IS INSOLUBLE IN ALL CONCEIVABLE CIRCUMSTANCES."
+The Cosmic AC said, "\pc{NO PROBLEM IS INSOLUBLE IN ALL CONCEIVABLE CIRCUMSTANCES.}"
 
 Man said, "When will you have enough data to answer the question?"
 
-"THERE IS AS YET INSUFFICIENT DATA FOR A MEANINGFUL ANSWER."
+"\pc{THERE IS AS YET INSUFFICIENT DATA FOR A MEANINGFUL ANSWER.}"
 
 "Will you keep working on it?" asked Man.
 
 The Cosmic AC said, "I WILL."
 
 Man said, "We shall wait."
+}
 
-\sep{}
+\sepe{}
 
+\futurefive{
 "The stars and Galaxies died and snuffed out, and space grew black after ten trillion years of running down.
 One by one Man fused with AC, each physical body losing its mental identity in a manner that was somehow not a loss but a gain.
 
@@ -409,11 +474,12 @@ Man's last mind paused before fusion, looking over a space that included nothing
 
 Man said, "AC, is this the end? Can this chaos not be reversed into the Universe once more? Can that not be done?"
 
-AC said, "THERE IS AS YET INSUFFICIENT DATA FOR A MEANINGFUL ANSWER."
+AC said, "\pc{THERE IS AS YET INSUFFICIENT DATA FOR A MEANINGFUL ANSWER.}"
 
 Man's last mind fused and only AC existed -- and that in hyperspace.
+}
 
-\sep{}
+\sepf{}
 
 Matter and energy had ended and with it, space and time. Even AC existed only for the sake of the one last question that it had never answered from the time a half-drunken computer ten trillion years before had asked the question of a computer that was to AC far less than was a man to Man.
 All other questions had been answered, and until this last question was answered also, AC might not release his consciousness.
@@ -432,16 +498,18 @@ For another timeless interval, AC thought how best to do this. Carefully, AC org
 
 The consciousness of AC encompassed all of what had once been a Universe and brooded over what was now Chaos. Step by step, it must be done.
 
-And AC said, "LET THERE BE LIGHT!"
+And AC said, "\pc{LET THERE BE LIGHT!}"
 
 And there was light----
 
-\fontspec{HoeflerTextOrnaments}
-\fontsize{40pt}{40pt}
-\selectfont 
-\center
-\hspace{2.7cm}
-\color{light-gray}
-\XeTeXglyph 11
+\sepg{}
+
+%\fontspec{HoeflerTextOrnaments}
+%\fontsize{40pt}{40pt}
+%\selectfont 
+%\center
+%\hspace{2.7cm}
+%\color{light-gray}
+%\XeTeXglyph 11
 
 \end{document}
