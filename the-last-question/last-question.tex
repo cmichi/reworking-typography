@@ -11,6 +11,8 @@
 \defaultfontfeatures{Mapping=tex-text}
 \usepackage{fontspec, graphicx}
 \usepackage{lettrine}
+\usepackage{setspace} 
+
 
 \usepackage[usenames,dvipsnames]{xcolor}
 \definecolor{light-gray}{gray}{0.35}
@@ -84,6 +86,43 @@
 \begin{document}
 
 \thispagestyle{empty}
+
+%\vspace*{.0cm}
+		%\vspace*{1pt}
+
+%{\fontspec{Gotham Black}\small \addfontfeature{LetterSpace=-12.0,WordSpace=.7}{
+{\fontspec{Gotham Black}\small \addfontfeature{LetterSpace=-2,WordSpace=.0}{
+	\begin{spacing}{20}
+	\fontsize{140pt}{8pt}\selectfont
+		SHORT\\
+		STORY\\
+		\mbox{2\hspace{1cm}GO}\\
+	\end{spacing}
+}} 
+		%\rule{10cm}{5cm}
+
+\newpage
+\ 
+\newpage
+
+\thispagestyle{empty}
+\vspace*{2cm}
+
+\begin{center}
+\textit{This is by far my favorite story of all those I have written.}
+
+\ \\
+
+\textit{After all, I undertook to tell several trillion years of human history 
+in the space of a short story and I leave it to you as to how well I 
+succeeded.}
+\\ \ \\
+
+---\textsc{Isaac Asimov}---
+\end{center}
+
+\newpage
+\setcounter{page}{1}
 
 {
 	\textbf{The Last Question}\\
@@ -503,6 +542,42 @@ And AC said, "\pc{LET THERE BE LIGHT!}"
 And there was light----
 
 \sepg{}
+
+\newpage
+\
+\newpage
+
+\textbf{Background}\\
+
+From time to time I find articles, texts or poems which I really like. But
+in some of those cases the text is typeset in such a poor way that it makes
+me sad. For me, typography has the same role as rhetoric---the way in which
+you say something can have a totally different impact and I think this is
+equally true for text and typography.
+A document which is typeset in a fitting manner has the ability to affect 
+the reader in a totally different way.\\
+
+Sometimes I take time and make an effort to improve the horrible typesetting 
+of wonderful texts. This document is the result of such an effort.
+
+\begin{center}
+	\enquote{\textit{Typography---the voice of the page.}}
+\end{center}
+
+\newpage
+
+\textbf{Colophon}\\
+
+This text was set using the \textsc{pf din text condensed}. 
+The computer output was set using the \pc{OCR-A} font.
+For the ornaments I used the wonderful \textsc{ptl roletta floral ornaments}
+font.\\
+
+On the software side this document was typeset using \XeTeX.
+The sourcecode behind this document is accessible via
+%\pc{https://github.com/cmichi/reworking-typography}.
+\pc{HTTPS://GITHUB.COM/CMICHI/REWORKING-TYPOGRAPHY}.
+You can also find a pdf version of this document there.
 
 %\fontspec{HoeflerTextOrnaments}
 %\fontsize{40pt}{40pt}
