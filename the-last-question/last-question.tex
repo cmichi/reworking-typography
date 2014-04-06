@@ -26,7 +26,11 @@
 %\newcommand{\q}[1]{\enquote{#1}}
 \newcommand{\q}[1]{»#1«}
 
-\newcommand{\pc}[1]{ {\fontspec{OCRA}\scriptsize \addfontfeature{LetterSpace=-12.0,WordSpace=.7}{#1}} }
+\newcommand{\engine}[0]{ {\fontspec{Latin Modern Roman}\normalsize \XeLaTeX}}
+\newcommand{\enginetwo}[0]{ {\fontspec{Latin Modern Roman}\normalsize \LaTeX}}
+
+\newcommand{\pc}[1]{{\fontspec{OCRA}\scriptsize \addfontfeature{LetterSpace=-12.0,WordSpace=.7}{#1}}}
+%\newcommand{\pc}[1]{ {\fontspec{OCRA}\scriptsize \addfontfeature{LetterSpace=-12.0,WordSpace=.7}{#1}} }
 \newcommand{\futureone}[1]{ #1 }
 \newcommand{\futuretwo}[1]{ #1 }
 \newcommand{\futurethree}[1]{ #1 }
@@ -789,21 +793,44 @@ different fonts for the different time chapters.
 \ \\
 \textbf{What to do with this document now?}\\
 
-Keep it or leave it at some place where others will likely find and read it.
+%What should you do with this document now? 
+Of course you are free to do whatever you want with it, but I would suggest 
+you either keep it or leave it at some place where others will likely find 
+it and read it. Please don't throw it away. 
+
+%\ \\
+%\textbf{What should I do now?}\\
+
+
 
 \newpage
 
 \textbf{Colophon}\\
 
 This text was set using the \textsc{pf din text condensed}. 
-The computer output was set using the \pc{OCR-A} font.
+The computer output was set using \pc{OCR-A}, a font which was designed
+as a mean to make it easier to transform printed texts into a digital 
+representation. This is achieved by scanning them and using optical 
+text recognition algorithms on the scanned characters. 
 For the ornaments I used the wonderful \textsc{ptl roletta floral ornaments}
 font.\\
 
-On the software side this document was typeset using \XeTeX.
+On the software side this document was typeset using \engine.
 The sourcecode behind this document is accessible via
-%\pc{https://github.com/cmichi/reworking-typography}.
-\pc{HTTPS://GITHUB.COM/CMICHI/REWORKING-TYPOGRAPHY}.
-You can also find a pdf version of this document there.
+\pc{https://github.com/cmichi/reworking-typography}. 
+A pdf version of this document is available there as well.
+%\hspace{-0.1cm} \pc{https://github.com/cmichi/reworking-typography}\hspace{-0.1cm}. 
+
+\ \\
+\textbf{Inspired?}\\
+
+If this document motivated you to learn more about typesetting I would
+suggest you read about names like Spiekermann, Frutiger, Zapf, Hoefler or
+Frere-Jones. I would also suggest to start using high-quality typesetting
+systems. \enginetwo{} is free software and you can download and install them 
+right now: \texttt{http://textlive.org}.
+%Maybe you got some inspirations for typesetiing, maybe you were motivated
+%to learn something about Typography or high-quality typesetting systems
+%like \LaTeX.
 
 \end{document}
