@@ -41,9 +41,9 @@
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="0.45903767"
-     inkscape:cx="96.442988"
-     inkscape:cy="543.78449"
+     inkscape:zoom="1.2983546"
+     inkscape:cx="236.74246"
+     inkscape:cy="541.59428"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -4772,4 +4772,11 @@
          height="792" />
     </g>
   </g>
+  <rect
+     style="fill:none;stroke:#bababa;stroke-width:2.18631983;stroke-opacity:1"
+     id="rect4480"
+     width="351.04568"
+     height="510.03769"
+     x="1.0931599"
+     y="1.0931686" />
 </svg>
