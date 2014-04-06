@@ -17,7 +17,7 @@ I have decided to publish some of these workings here from time to time.
 
 ### After
 
-[![After](https://github.com/cmichi/reworking-typography/raw/master/hibernation/after.png)](https://github.com/cmichi/reworking-typography/raw/master/hibernation/hibernation.pdf)
+[![After](https://github.com/cmichi/reworking-typography/raw/master/hibernation/after.svg)](https://github.com/cmichi/reworking-typography/raw/master/hibernation/hibernation.pdf)
 
 (click on image to open the PDF)
 
