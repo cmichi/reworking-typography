@@ -16,8 +16,13 @@
 \usepackage{setspace} 
 
 
-\usepackage[usenames,dvipsnames]{xcolor}
-\definecolor{light-gray}{gray}{0.35}
+%\usepackage[usenames,dvipsnames]{xcolor}
+%\definecolor{light-gray}{gray}{0.35}
+
+% uncomment to invert
+%\usepackage{xcolor}
+%\pagecolor[rgb]{0.0,0.0,0.0}
+%\color{white}
 
 %\setmainfont[Ligatures = {Common, Rare}]{Adobe Garamond Pro}
 \setmainfont[Ligatures = {Common, Rare}]{PF Din Text Cond Pro}
@@ -42,45 +47,48 @@
 %\newcommand{\futuretwo}[1]{ {\fontspec{Final Frontier} #1 }}
 %\newcommand{\futurefive}[1]{ {\fontspec{P22 Arts And Crafts} #1 }}
 
+%\newcommand{\specialinitial}[1]{\initial{\fontspec{P22 Arts And Crafts} #1}}
+
+
 \newcommand{\sepa}[0]{\vspace{.8cm} {\centering 
 
-\includegraphics[scale=1.00]{o1.pdf}
+\includegraphics[scale=1.00]{blackor/o1.pdf}
 
 }\vspace{.8cm}}
 
 \newcommand{\sepb}[0]{\vspace{.8cm} {\centering 
 
-\includegraphics[scale=1.00]{o7.pdf}
+\includegraphics[scale=1.00]{blackor/o7.pdf}
 
 }\vspace{.8cm}}
 
 \newcommand{\sepc}[0]{\vspace{.8cm} {\centering 
 
-\includegraphics[scale=1.00]{o3.pdf}
+\includegraphics[scale=1.00]{blackor/o3.pdf}
 
 }\vspace{.8cm}}
 
 \newcommand{\sepd}[0]{\vspace{.8cm} {\centering 
 
-\includegraphics[scale=1.00]{o4.pdf}
+\includegraphics[scale=1.00]{blackor/o4.pdf}
 
 }\vspace{.8cm}}
 
 \newcommand{\sepe}[0]{\vspace{.8cm} {\centering 
 
-\includegraphics[scale=1.00]{o5.pdf}
+\includegraphics[scale=1.00]{blackor/o5.pdf}
 
 }\vspace{.8cm}}
 
 \newcommand{\sepf}[0]{\vspace{.8cm} {\centering 
 
-\includegraphics[scale=1.00]{o6.pdf}
+\includegraphics[scale=1.00]{blackor/o6.pdf}
 
 }\vspace{.8cm}}
 
 \newcommand{\sepg}[0]{\vspace{.8cm} {\centering 
 
-\includegraphics[scale=1.00]{o2.pdf}
+\includegraphics[scale=1.00]{blackor/o2.pdf}
 
 }\vspace{.8cm}}
 
@@ -90,25 +98,12 @@
 
 
 \begin{document}
+%\color{white}
 
-\thispagestyle{empty}
-
-%\vspace*{.0cm}
-		%\vspace*{1pt}
-
-%{\fontspec{Gotham Black}\small \addfontfeature{LetterSpace=-12.0,WordSpace=.7}{
-{\fontspec{Gotham Black}\small \addfontfeature{LetterSpace=-2,WordSpace=.0}{
-	\begin{spacing}{20}
-	\fontsize{140pt}{8pt}\selectfont
-		SHORT\\
-		STORY\\
-		\mbox{2\hspace{1cm}GO}\\
-	\end{spacing}
-}} 
-		%\rule{10cm}{5cm}
+%\include{title}
 
 \newpage
-\ 
+\
 \newpage
 
 \thispagestyle{empty}
@@ -736,6 +731,7 @@ Man's last mind fused and only AC existed---and that in hyperspace.
 
 \sepf{}
 
+%\specialinitial{M}
 \initial{M}atter and energy had ended and with it, space and time. Even AC 
 existed only for the sake of the one last question that it had never 
 answered from the time a half-drunken computer ten trillion years before had 
@@ -777,72 +773,6 @@ And there was light.
 %\
 %\newpage
 
-\textbf{Background}\\
-
-From time to time I find articles, texts or poems which I really like. But
-in some of those cases the text is typeset in such a poor way that it makes
-me sad. For me, typography has the same role as rhetoric---the way in which
-you say something can have a totally different impact. In my opinion this is
-equally true for text and typography.
-A document which is typeset in a fitting manner has the ability to affect 
-the reader in a totally different way.
-
-\begin{center}
-	\enquote{\textit{Typography---the voice of the page.}}
-\end{center}
-
-Sometimes I take time and make an effort to improve the horrible typesetting 
-of wonderful texts. This document is the result of such an effort.
-I chose to typseet this story after I had read a printed version. When I 
-arrived at the last page I took one hand and coverd the ending sentences
-in order for my eyes not to accidentally catch a word. You know a story
-is well written once it makes you do that.
-I experimented with various layouts and fonts, at one point I even had
-different, increasing futuristic, fonts for the different time chapters.
-In the end, however, I decided to go for the more non-obtrusive approach.
-
-
-\ \\
-\textbf{What to do with this document now?}\\
-
-%What should you do with this document now? 
-Of course you are free to do whatever you want with it, but I would suggest 
-you either keep it or leave it at some place where others will likely find 
-it and read it. Please don't throw it away. 
-
-%\ \\
-%\textbf{What should I do now?}\\
-
-
-
-\newpage
-
-\textbf{Colophon}\\
-
-This text was typeset using the \textsc{pf din text condensed}. 
-The computer output was set using \pc{OCR-A}, a font which was designed
-as a mean for easing the transformation of printed text into a digital 
-representation. This is achieved by scanning texts and using optical 
-text recognition algorithms on the scanned characters. 
-For the ornaments I used the wonderful \textsc{ptl roletta floral ornaments}
-font.\\
-
-On the software side this document was typeset using \engine.
-The sourcecode behind this document is accessible via
-\pc{https://github.com/cmichi/reworking-typography}. 
-A pdf version of this document is available there as well.
-%\hspace{-0.1cm} \pc{https://github.com/cmichi/reworking-typography}\hspace{-0.1cm}. 
-
-\ \\
-\textbf{Inspired?}\\
-
-If this document motivated you to learn more about typesetting I would
-suggest you read about names like Spiekermann, Frutiger, Zapf, Hoefler or
-Frere-Jones. I would also suggest to start using high-quality typesetting
-systems. \enginetwo{} is free software, you can freely download and install 
-it right now: \texttt{http://textlive.org}.
-%Maybe you got some inspirations for typesetiing, maybe you were motivated
-%to learn something about Typography or high-quality typesetting systems
-%like \LaTeX.
+%\include{appendix}
 
 \end{document}
