@@ -6,3 +6,6 @@ alert:
 
 print:
 	pdflatex --halt-on-error print.tex
+
+clean:
+	rm *~ *aux *log *pdf
