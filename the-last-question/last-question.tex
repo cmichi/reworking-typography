@@ -14,6 +14,9 @@
 \usepackage{fontspec, graphicx}
 \usepackage{lettrine}
 \usepackage{setspace} 
+\usepackage{afterpage} 
+\usepackage{floatpag}
+\usepackage{ragged2e}
 
 
 %\usepackage[usenames,dvipsnames]{xcolor}
@@ -26,7 +29,7 @@
 
 %\setmainfont[Ligatures = {Common, Rare}]{Adobe Garamond Pro}
 \setmainfont[Ligatures = {Common, Rare}]{PF Din Text Cond Pro}
-\parindent0mm
+%\parindent0mm
 
 \usepackage[babel,german=guillemets]{csquotes}
 %\usepackage[babel,german=guillemets]{csquotes}
@@ -96,37 +99,49 @@
 \newcommand{\initialb}[1]{ \lettrine[lines=3,lhang=0.3,nindent=1em]{  {\textsf{#1}}}{}}
 \newcommand{\initialt}[1]{ \lettrine[lines=3,lhang=0.3]{  {\textsf{#1}}}{}}
 
-
 \begin{document}
 %\color{white}
 
-%\include{title}
+\include{title}
 
-\newpage
-\
-\newpage
+%\newpage
+%\
+%\newpage
 
 \thispagestyle{empty}
 \vspace*{2cm}
 
+
+\afterpage{%
+\thispagestyle{empty}
+\begin{figure*}
+\thispagestyle{empty}
+\floatpagestyle{empty}
 \begin{center}
 \textit{This is by far my favorite story of all those I have written.}
+\thispagestyle{empty}
 
 \ \\
 
-\textit{After all, I undertook to tell several trillion years of human history 
-in the space of a short story and I leave it to you as to how well I 
+\textit{
+After all, I undertook to tell several trillion years of human history in the \\space of a short story and I leave it to you as to how well I 
 succeeded.}
 \\ \ \\
 
 ---\textsc{Isaac Asimov}---
 \end{center}
+\clearpage
+\floatpagestyle{empty}
+\end{figure*}
+
+\thispagestyle{empty}
+\clearpage
+}
 
 \newpage
 \setcounter{page}{1}
 
-{
-	\textbf{The Last Question}\\
+{\parindent0mm  \textbf{The Last Question}\\
 	\textsc{Isaac Asimov}\\
 }
 \ \\
@@ -767,12 +782,13 @@ And there was light.
 
 \ \\
 \vspace{8cm}\\
-\sepg{}
+%\sepg{}
 
 \newpage
 %\
 %\newpage
 
 %\include{appendix}
+\include{appendixtwo}
 
 \end{document}
