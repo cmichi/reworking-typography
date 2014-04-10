@@ -17,7 +17,7 @@ I have decided to publish some of these workings here from time to time.
 
 ### After
 
-[![After](http://micha.elmueller.net/wp-content/uploads/2014/03/after.svg)](https://github.com/cmichi/reworking-typography/raw/master/hibernation/hibernation.pdf)
+[![After](http://micha.elmueller.net/wp-content/uploads/2014/03/after-with-border.svg)](https://github.com/cmichi/reworking-typography/raw/master/hibernation/hibernation.pdf)
 
 (click on image to open the PDF)
 
