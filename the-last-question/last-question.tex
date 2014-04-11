@@ -5,6 +5,7 @@
 %\documentclass[11pt,twocolumn,paper=a5,pagesize]{article}
 
 \documentclass[11pt,twocolumn,paper=a5,pagesize,twoside]{scrartcl}
+%\documentclass[11pt,paper=a5,pagesize,twoside]{scrartcl}
 
 \usepackage{multicol}
 %\documentclass[11pt]{article}
@@ -17,7 +18,14 @@
 \usepackage{afterpage} 
 \usepackage{floatpag}
 \usepackage{ragged2e}
+\raggedbottom
 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\centering{\thepage}}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
 
 %\usepackage[usenames,dvipsnames]{xcolor}
 %\definecolor{light-gray}{gray}{0.35}
@@ -31,12 +39,9 @@
 \setmainfont[Ligatures = {Common, Rare}]{PF Din Text Cond Pro}
 %\parindent0mm
 
-%\usepackage[babel,german=guillemets]{csquotes}
 \usepackage{polyglossia}
 \setmainlanguage[variant=british]{english}
 
-%\usepackage[babel,german=guillemets]{csquotes}
-%\newcommand{\q}[1]{\enquote{#1}}
 \newcommand{\q}[1]{»#1«}
 
 \newcommand{\engine}[0]{ {\fontspec{Latin Modern Roman}\normalsize \XeLaTeX}}
@@ -104,6 +109,7 @@
 
 \begin{document}
 %\color{white}
+%\begin{multicols}{2} 
 
 \include{title}
 
@@ -314,6 +320,13 @@ By next morning, the two, plagued with throbbing head and cottony mouth,
 had forgotten about the incident.
 
 \sepa{}
+%\vspace{.4cm} 
+%{\centering 
+
+%\includegraphics[scale=0.8]{blackor/o1.pdf}
+
+%}
+%\vspace{.4cm} 
 
 \futureone{
 %\initialb{\includegraphics[scale=0.82]{neu4.pdf}}
@@ -582,7 +595,7 @@ Zee Prime's perceptions broadened until the Galaxies themselves shrunk and
 became a new, more diffuse powdering on a much larger background. So many 
 hundreds of billions of them, all with their immortal beings, all carrying 
 their load of intelligences with minds that drifted freely through space. 
-And yet one of them was unique among them all in being the originals 
+And yet one of them was unique among them all in being the original 
 Galaxy. One of them had, in its vague and distant past, a period when it 
 was the only Galaxy populated by man.
 
@@ -603,7 +616,7 @@ across, difficult to see.
 is there I cannot imagine.}
 
 Nor could anyone, for the day had long since passed, Zee Prime knew, when 
-any man had any part of the making of a universal AC. Each Universal AC 
+any man had any part of the making of a Universal AC. Each Universal AC 
 designed and constructed its successor. Each, during its existence of a 
 million years or more accumulated the necessary data to build a better 
 and more intricate, more capable successor in which its own store of data 
@@ -622,8 +635,8 @@ stifled his disappointment.
 Dee Sub Wun, whose mind had accompanied the other, said suddenly, \q{And 
 is one of these stars the original star of Man?}
 
-The Universal AC said, \q{\textsc{man's original star has gone nova. it is 
-now a white dwarf.}}
+The Universal AC said, \q{\pc{MAN'S ORIGINAL STAR HAS GONE NOVA. IT IS 
+NOW A WHITE DWARF.}}
 
 \q{Did the men upon it die?} asked Zee Prime, startled and without thinking.
 
@@ -752,8 +765,8 @@ Man's last mind fused and only AC existed---and that in hyperspace.
 %\specialinitial{M}
 \initial{M}atter and energy had ended and with it, space and time. Even AC 
 existed only for the sake of the one last question that it had never 
-answered from the time a half-drunken computer ten trillion years before had 
-asked the question of a computer that was to AC far less than was a man to 
+answered from the time a half-drunken man ten trillion years before had 
+asked the question to a computer that was to AC far less than was a man to 
 Man.
 All other questions had been answered, and until this last question was 
 answered also, AC might not release his consciousness.
@@ -781,7 +794,7 @@ And AC said, \q{\pc{LET THERE BE LIGHT!}}
 
 And there was light.
 
-\pagebreak
+\clearpage
 
 \ \\
 \vspace{8cm}\\
@@ -791,7 +804,8 @@ And there was light.
 %\
 %\newpage
 
-%\include{appendix}
-\include{appendixtwo}
+\include{appendix}
+%\include{appendixtwo}
+%\end{multicols}{2} 
 
 \end{document}
