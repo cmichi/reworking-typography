@@ -4,7 +4,7 @@
 %\documentclass[11pt,twocolumn]{article}
 %\documentclass[11pt,twocolumn,paper=a5,pagesize]{article}
 
-\documentclass[11pt,twocolumn,paper=a5,pagesize,twoside]{article}
+\documentclass[11pt,twocolumn,paper=a5,pagesize,twoside]{scrartcl}
 
 \usepackage{multicol}
 %\documentclass[11pt]{article}
@@ -31,7 +31,10 @@
 \setmainfont[Ligatures = {Common, Rare}]{PF Din Text Cond Pro}
 %\parindent0mm
 
-\usepackage[babel,german=guillemets]{csquotes}
+%\usepackage[babel,german=guillemets]{csquotes}
+\usepackage{polyglossia}
+\setmainlanguage[variant=british]{english}
+
 %\usepackage[babel,german=guillemets]{csquotes}
 %\newcommand{\q}[1]{\enquote{#1}}
 \newcommand{\q}[1]{»#1«}
@@ -53,47 +56,47 @@
 %\newcommand{\specialinitial}[1]{\initial{\fontspec{P22 Arts And Crafts} #1}}
 
 
-\newcommand{\sepa}[0]{\vspace{.8cm} {\centering 
+\newcommand{\sepa}[0]{\vspace{.4cm} {\centering 
 
-\includegraphics[scale=1.00]{blackor/o1.pdf}
+\includegraphics[scale=0.8]{blackor/o1.pdf}
 
-}\vspace{.8cm}}
+}\vspace{.4cm}}
 
-\newcommand{\sepb}[0]{\vspace{.8cm} {\centering 
+\newcommand{\sepb}[0]{\vspace{.4cm} {\centering 
 
-\includegraphics[scale=1.00]{blackor/o7.pdf}
+\includegraphics[scale=0.8]{blackor/o7.pdf}
 
-}\vspace{.8cm}}
+}\vspace{.4cm}}
 
-\newcommand{\sepc}[0]{\vspace{.8cm} {\centering 
+\newcommand{\sepc}[0]{\vspace{.4cm} {\centering 
 
-\includegraphics[scale=1.00]{blackor/o3.pdf}
+\includegraphics[scale=0.8]{blackor/o3.pdf}
 
-}\vspace{.8cm}}
+}\vspace{.4cm}}
 
-\newcommand{\sepd}[0]{\vspace{.8cm} {\centering 
+\newcommand{\sepd}[0]{\vspace{.4cm} {\centering 
 
-\includegraphics[scale=1.00]{blackor/o4.pdf}
+\includegraphics[scale=0.8]{blackor/o4.pdf}
 
-}\vspace{.8cm}}
+}\vspace{.4cm}}
 
-\newcommand{\sepe}[0]{\vspace{.8cm} {\centering 
+\newcommand{\sepe}[0]{\vspace{.4cm} {\centering 
 
-\includegraphics[scale=1.00]{blackor/o5.pdf}
+\includegraphics[scale=0.8]{blackor/o5.pdf}
 
-}\vspace{.8cm}}
+}\vspace{.4cm}}
 
-\newcommand{\sepf}[0]{\vspace{.8cm} {\centering 
+\newcommand{\sepf}[0]{\vspace{.4cm} {\centering 
 
-\includegraphics[scale=1.00]{blackor/o6.pdf}
+\includegraphics[scale=0.8]{blackor/o6.pdf}
 
-}\vspace{.8cm}}
+}\vspace{.4cm}}
 
-\newcommand{\sepg}[0]{\vspace{.8cm} {\centering 
+\newcommand{\sepg}[0]{\vspace{.4cm} {\centering 
 
-\includegraphics[scale=1.00]{blackor/o2.pdf}
+\includegraphics[scale=0.8]{blackor/o2.pdf}
 
-}\vspace{.8cm}}
+}\vspace{.4cm}}
 
 \newcommand{\initial}[1]{ \lettrine[lines=3,lhang=0.3,nindent=0em]{  {\textsf{#1}}}{}}
 \newcommand{\initialb}[1]{ \lettrine[lines=3,lhang=0.3,nindent=1em]{  {\textsf{#1}}}{}}
@@ -247,7 +250,7 @@ sun when ours is done, aren't you?}
 \q{I'm not thinking.}
 
 \q{Sure you are. You're weak on logic, that's the trouble with you. You're 
-like the guy in the story who was caught in a sudden shower and Who ran to 
+like the guy in the story who was caught in a sudden shower and who ran to 
 a grove of trees and got under one. He wasn't worried, you see, because he 
 figured when one tree got wet through, he would just get under another one.}
 
