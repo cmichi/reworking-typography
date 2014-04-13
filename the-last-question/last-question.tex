@@ -4,13 +4,27 @@
 %\documentclass[11pt,twocolumn]{article}
 %\documentclass[11pt,twocolumn,paper=a5,pagesize]{article}
 
-\documentclass[11pt,twocolumn,paper=a5,pagesize,twoside]{scrartcl}
+\documentclass[twocolumn,11pt,paper=a5,pagesize,english,openright,twoside]{scrbook}
+
+% switch margins
+\let\tmp\oddsidemargin
+\let\oddsidemargin\evensidemargin
+\let\evensidemargin\tmp
+\reversemarginpar
+
+%\documentclass[11pt,paper=a5,pagesize=pdftex,twoside,twocolumn,english]{scrbook}
+%\documentclass[11pt,paper=a5,pagesize,twoside,twocolumn,english]{scrbook}
+%\usepackage[DIV=15]{typearea}
+%\usepackage[left=2cm, right=1cm,top=1.5cm, bottom=2.5cm,a5paper]{geometry}
+ 
+
 %\documentclass[11pt,paper=a5,pagesize,twoside]{scrartcl}
 
-\usepackage{multicol}
+%\usepackage{multicol}
 %\documentclass[11pt]{article}
 \usepackage{xunicode}
 \usepackage{xltxtra}
+
 \defaultfontfeatures{Mapping=tex-text}
 \usepackage{fontspec, graphicx}
 \usepackage{lettrine}
@@ -18,6 +32,12 @@
 \usepackage{afterpage} 
 \usepackage{floatpag}
 \usepackage{ragged2e}
+
+\usepackage{textcomp}
+%\usepackage{newunicodechar}
+%\newunicodechar{№}{{\makexeCJKinactive №}}
+%\let\No №
+
 %\raggedbottom
 
 \usepackage{fancyhdr}
@@ -59,32 +79,32 @@
 %\newcommand{\futurefive}[1]{ {\fontspec{P22 Arts And Crafts} #1 }}
 
 \newcommand{\specialinitialf}[1]{
-\lettrine[lines=3,lhang=0.21,nindent=0em]{  
+\lettrine[lines=3,lhang=0.21,nindent=0.0em,findent=0.3em]{  
 \fontspec{P22 Arts And Crafts}\fontsize{63}{48}\selectfont #1}}
 
 \newcommand{\specialinitiale}[1]{
-\lettrine[lines=3,lhang=0.21,nindent=0em]{  
+\lettrine[lines=3,lhang=0.21,nindent=0.0em,findent=0.3em]{  
 \fontspec{Final Frontier}\fontsize{48}{48}\selectfont #1}}
 
 \newcommand{\specialinitiala}[1]{
-\lettrine[lines=3,lhang=0.21,nindent=0em]{  
+\lettrine[lines=3,lhang=0.21,nindent=0em,findent=0.1em]{  
 \textsf{#1}}}
 %\fontspec{Final Frontier}\fontsize{48}{48}
 
 \newcommand{\specialinitialb}[1]{
-\lettrine[lines=3,lhang=0.21,nindent=0em]{  
+\lettrine[lines=3,lhang=0.21,nindent=0.0em,findent=0.2em]{  
 \fontspec{Final Frontier}\fontsize{48}{48}\selectfont #1}}
 
 \newcommand{\specialinitialc}[1]{
-\lettrine[lines=3,lhang=0.16,nindent=0.2em]{  
+\lettrine[lines=3,lhang=0.16,nindent=0.0em,findent=0.2em]{  
 \fontspec{Final Frontier}\fontsize{47}{48}\selectfont #1}}
 
 \newcommand{\specialinitiald}[1]{
-\lettrine[lines=3,lhang=0.21,nindent=0em]{  
-\fontspec{Final Frontier}\fontsize{48}{48}\selectfont #1}}
+\lettrine[lines=3,lhang=0.21,nindent=0em,findent=0.3em]{  
+\fontspec{Final Frontier}\fontsize{51}{48}\selectfont #1}}
 
 \newcommand{\specialinitialg}[1]{
-\lettrine[lines=3,lhang=0.21,nindent=0.1em]{  
+\lettrine[lines=3,lhang=0.21,nindent=0.1em,findent=0.2em]{  
 \fontspec{Final Frontier}\fontsize{47}{48}\selectfont #1}}
 
 
@@ -140,6 +160,7 @@
 %\color{white}
 %\begin{multicols}{2} 
 
+
 \include{title}
 
 %\newpage
@@ -177,6 +198,14 @@ succeeded.}
 }
 
 \newpage
+%\
+%foo
+%\newpage
+%foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+%\
+%\newpage
+%
+%\newpage
 \setcounter{page}{1}
 
 {\parindent0mm  \textbf{The Last Question}\\
@@ -479,10 +508,11 @@ He shrugged and looked at the visiplate. X-23 was just ahead.
 \sepb{}
 
 \futuretwo{
-\specialinitiald{V}{\addfontfeature{Numbers=Lining}\selectfont J-23X} of Lameth stared into the black depths of the 
-three-dimensional, small-scale map of the Galaxy and said, \q{Are we 
-ridiculous, I wonder, in being so concerned about the matter?}
-MQ-17J of Nicron shook his head. \q{I think not. You know the Galaxy 
+\specialinitiald{V}{\addfontfeature{Numbers=Lining}\selectfont J-23X} of 
+Lameth stared into the black depths of the three-dimensional, small-scale 
+map of the galaxy and said, \q{Are we ridiculous, I wonder, in being so 
+concerned about the matter?}
+MQ-17J of Nicron shook his head. \q{I think not. You know the galaxy 
 will be filled in five years at the present rate of expansion.}
 
 Both seemed in their early twenties, both were tall and perfectly formed.
@@ -493,14 +523,14 @@ Galactic Council.}
 \q{I wouldn't consider any other kind of report. Stir them up a bit. We've 
 got to stir them up.}
 
-VJ-23X sighed. \q{Space is infinite. A hundred billion Galaxies are there 
+VJ-23X sighed. \q{Space is infinite. A hundred billion galaxies are there 
 for the taking. More.}
 
 \q{A hundred billion is not infinite and it's getting less infinite all the 
 time. Consider! Twenty thousand years ago, mankind first solved the problem 
 of utilizing stellar energy, and a few centuries later, interstellar travel 
 became possible. It took mankind a million years to fill one small world and 
-then only fifteen thousand years to fill the rest of the Galaxy. Now the 
+then only fifteen thousand years to fill the rest of the galaxy. Now the 
 population doubles every ten years---}
 
 VJ-23X interrupted. \q{We can thank immortality for that.}
@@ -518,25 +548,25 @@ no means old enough. How old are you?}
 \q{Two hundred twenty-three. And you?}
 
 \q{I'm still under two hundred---but to get back to my point. Population 
-doubles every ten years. Once this Galaxy is filled, we'll have another 
+doubles every ten years. Once this galaxy is filled, we'll have another 
 filled in ten years. Another ten years and we'll have filled two more. 
 Another decade, four more. In a hundred years, we'll have filled a thousand
-Galaxies. In a thousand years, a million Galaxies. In ten thousand years, 
+galaxies. In a thousand years, a million galaxies. In ten thousand years, 
 the entire known Universe. Then what?}
 
 VJ-23X said, \q{As a side issue, there's a problem of transportation. I 
-wonder how many sunpower units it will take to move Galaxies of individuals 
-from one Galaxy to the next.}
+wonder how many sunpower units it will take to move galaxies of individuals 
+from one galaxy to the next.}
 
 \q{A very good point. Already, mankind consumes two sunpower units per year.}
 
-\q{Most of it's wasted. After all, our own Galaxy alone pours out a thousand 
+\q{Most of it's wasted. After all, our own galaxy alone pours out a thousand 
 sunpower units a year and we only use two of those.}
 
 \q{Granted, but even with a hundred per cent efficiency, we can only stave 
 off the end. Our energy requirements are going up in geometric progression 
 even faster than our population. We'll run out of energy even sooner than 
-we run out of Galaxies. A good point. A very good point.}
+we run out of galaxies. A good point. A very good point.}
 
 \q{We'll just have to build new stars out of interstellar gas.}
 
@@ -586,7 +616,7 @@ make to the Galactic Council.
 \sepc{}
 
 \futurethree{
-\specialinitialg{Z}{ee} Prime's mind spanned the new Galaxy with a faint interest in the 
+\specialinitialg{Z}{ee} Prime's mind spanned the new galaxy with a faint interest in the 
 countless twists of stars that powdered it. He had never seen this one before. 
 Would he ever see them all? So many of them, each with its load of 
 humanity---but a load that was almost a dead weight. More and more, the real 
@@ -602,16 +632,16 @@ of another mind.
 
 \q{I am Zee Prime,} said Zee Prime. \q{And you?}
 
-\q{I am Dee Sub Wun. Your Galaxy?}
+\q{I am Dee Sub Wun. Your galaxy?}
 
-\q{We call it only the Galaxy. And you?}
+\q{We call it only the galaxy. And you?}
 
-\q{We call ours the same. All men call their Galaxy their Galaxy and nothing 
+\q{We call ours the same. All men call their galaxy their galaxy and nothing 
 more. Why not?}
 
-\q{True. Since all Galaxies are the same.}
+\q{True. Since all galaxies are the same.}
 
-\q{Not all Galaxies. On one particular Galaxy the race of man must have 
+\q{Not all galaxies. On one particular galaxy the race of man must have 
 originated. That makes it different.}
 
 Zee Prime said, \q{On which one?}
@@ -620,16 +650,16 @@ Zee Prime said, \q{On which one?}
 
 \q{Shall we ask him? I am suddenly curious.}
 
-Zee Prime's perceptions broadened until the Galaxies themselves shrunk and 
+Zee Prime's perceptions broadened until the galaxies themselves shrunk and 
 became a new, more diffuse powdering on a much larger background. So many 
 hundreds of billions of them, all with their immortal beings, all carrying 
 their load of intelligences with minds that drifted freely through space. 
 And yet one of them was unique among them all in being the original 
-Galaxy. One of them had, in its vague and distant past, a period when it 
-was the only Galaxy populated by man.
+galaxy. One of them had, in its vague and distant past, a period when it 
+was the only galaxy populated by man.
 
-Zee Prime was consumed with curiosity to see this Galaxy and called, out: 
-\q{Universal AC! On which Galaxy did mankind originate?}
+Zee Prime was consumed with curiosity to see this galaxy and called, out: 
+\q{Universal AC! On which galaxy did mankind originate?}
 
 The Universal AC heard, for on every world and throughout space, it had its 
 receptors ready, and each receptor lead through hyperspace to some unknown 
@@ -653,10 +683,10 @@ and individuality would be submerged.
 
 The Universal AC interrupted Zee Prime's wandering thoughts, not with 
 words, but with guidance. Zee Prime's mentality was guided into the dim 
-sea of Galaxies and one in particular enlarged into stars.
+sea of galaxies and one in particular enlarged into stars.
 
 A thought came, infinitely distant, but infinitely clear. \q{\pc{THIS IS THE 
-ORIGINAL GALAXY OF MAN.}}
+ORIGINAL galaxy OF MAN.}}
 
 But it was the same after all, the same as any other, and Zee Prime 
 stifled his disappointment.
@@ -673,7 +703,7 @@ The Universal AC said, \q{\pc{A NEW WORLD, AS IN SUCH CASES, WAS CONSTRUCTED
 FOR THEIR PHYSICAL BODIES IN TIME.}}
 
 \q{Yes, of course,} said Zee Prime, but a sense of loss overwhelmed him 
-even so. His mind released its hold on the original Galaxy of Man, let it 
+even so. His mind released its hold on the original galaxy of Man, let it 
 spring back and lose itself among the blurred pin points. He never wanted 
 to see it again.
 
@@ -697,7 +727,7 @@ in direction.}
 And the Universal AC answered. \q{\pc{THERE IS AS YET INSUFFICIENT DATA FOR 
 A MEANINGFUL ANSWER.}}
 
-Zee Prime's thoughts fled back to his own Galaxy. He gave no further thought 
+Zee Prime's thoughts fled back to his own galaxy. He gave no further thought 
 to Dee Sub Wun, whose body might be waiting on a galaxy a trillion 
 light-years away, or on the star next to Zee Prime's own. It didn't matter.
 
@@ -709,14 +739,14 @@ could yet be built.
 \sepd{}
 
 \futurefour{
-\specialinitialc{M}{an} considered with himself, for in a way, Man, mentally, was one. 
-He consisted of a trillion, trillion, trillion ageless bodies, each in its 
-place, each resting quiet and incorruptible, each cared for by perfect 
+\specialinitialc{M}{an} considered with himself, for in a way, Man, mentally, 
+was one. He consisted of a trillion, trillion, trillion ageless bodies, each 
+in its place, each resting quiet and incorruptible, each cared for by perfect 
 automatons, equally incorruptible, while the minds of all the bodies freely 
 melted one into the other, indistinguishable.
 Man said, \q{The Universe is dying.}
 
-Man looked about at the dimming Galaxies. The giant stars, spendthrifts, 
+Man looked about at the dimming galaxies. The giant stars, spendthrifts, 
 were gone long ago, back in the dimmest of the dim far past. Almost all 
 stars were white dwarfs, fading to the end.
 
@@ -771,7 +801,7 @@ Man said, \q{We shall wait.}
 \sepe{}
 
 \futurefive{
-\specialinitiale{T}{he} stars and Galaxies died and snuffed out, and space grew black 
+\specialinitiale{T}{he} stars and galaxies died and snuffed out, and space grew black 
 after ten trillion years of running down.
 One by one Man fused with AC, each physical body losing its mental identity 
 in a manner that was somehow not a loss but a gain.
